@@ -1,0 +1,104 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Marketing d'Influence</h2>
+		<p>Nous vous aidons à maximiser la visibilité de votre marque en collaborant avec des
+influenceurs soigneusement sélectionnés. Grâce à un suivi précis des KPIs et une
+coordination multi-influenceurs harmonieuse, nous garantissons des campagnes
+performantes. Nous anticipons les imprévus pour maintenir une communication
+fluide et protéger votre image, tout en développant des relations durables avec des
+talents d'influence.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Création de Contenu</h2>
+		<p>Confiez-nous la création de vos contenus, qu'il s'agisse de visuels, vidéos ou
+articles. Nos créateurs, en phase avec votre identité de marque, vous assurent des
+retours itératifs pour ajuster et perfectionner chaque projet. Vous gagnez du temps
+pour vous concentrer sur des tâches stratégiques à forte valeur ajoutée, tandis que
+nous optimisons vos communications digitales. </p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2> Optimisation SEO</h2>
+		<p> Boostez votre visibilité grâce à une optimisation SEO complète. Nous réalisons des
+études de mots-clés et des analyses concurrentielles poussées pour identifier des
+opportunités d'amélioration. De la structure de votre site aux balises ALT en passant
+par le maillage interne, tout est pensé pour maximiser votre référencement. Nous
+développons également une stratégie de netlinking sur le long terme, assurant une
+croissance continue et un suivi des performances.</p>
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Amplify : prospection client automatisée via l’IA</h2>
+		<p>Gagnez du temps et augmentez votre efficacité avec notre solution de prospection
+client sur Instagram basée sur l'intelligence artificielle. Nous analysons vos besoins
+et automatisons les tâches répétitives, vous permettant de vous concentrer sur la
+conversion et le développement de votre activité. L'IA cible les bons prospects pour
+optimiser votre acquisition de clients sur les réseaux sociaux. </p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Rédaction d'Articles de Blog avec l’IA</h2>
+		<p>Grâce à notre solution de rédaction assistée par IA, nous générons des contenus de
+blog variés, engageants et optimisés pour le SEO. Que vous souhaitiez renforcer
+votre présence en ligne ou proposer des articles percutants, nous utilisons ChatGPT
+pour rédiger des textes cohérents et pertinents, alignés sur vos objectifs
+stratégiques.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2> Automatisation des Tâches avec l'IA</h2>
+		<p> Simplifiez vos processus grâce à l’automatisation intelligente. Nous identifions les
+tâches chronophages de votre activité et les optimisons à l’aide de l’intelligence
+artificielle. Que ce soit des workflows complexes ou des actions répétitives, nous
+mettons en place des solutions sur-mesure pour améliorer votre productivité tout en
+réduisant vos coûts opérationnels.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
